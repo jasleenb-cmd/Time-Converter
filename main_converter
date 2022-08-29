@@ -1,0 +1,9 @@
+number_of_seconds_per_hour = 3600
+number_of_seconds_per_minute = 60
+number_of_seconds = int(input("How many seconds do you want to convert? "))
+hours = number_of_seconds // number_of_seconds_per_hour
+seconds_still_remaining = number_of_seconds % number_of_seconds_per_hour
+minutes =  seconds_still_remaining // number_of_seconds_per_minute
+seconds_finally_remaining = seconds_still_remaining % number_of_seconds_per_minute
+
+print(hours, ' hrs ', minutes, ' mins ', seconds_finally_remaining, ' secs')
